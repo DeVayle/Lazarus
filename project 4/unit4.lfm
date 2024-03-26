@@ -1,0 +1,80 @@
+object Form1: TForm1
+  Left = 812
+  Height = 400
+  Top = 341
+  Width = 611
+  Caption = 'Form1'
+  ClientHeight = 400
+  ClientWidth = 611
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 32
+    Height = 15
+    Top = 280
+    Width = 134
+    Caption = 'Введите начало отрезка:'
+  end
+  object Label2: TLabel
+    Left = 32
+    Height = 15
+    Top = 320
+    Width = 127
+    Caption = 'Введите конец отрезка:'
+  end
+  object Label3: TLabel
+    Left = 32
+    Height = 15
+    Top = 360
+    Width = 71
+    Caption = 'Введите шаг:'
+    OnClick = Label3Click
+  end
+  object Edit1: TEdit
+    Left = 184
+    Height = 23
+    Top = 272
+    Width = 160
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 184
+    Height = 23
+    Top = 312
+    Width = 160
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 184
+    Height = 23
+    Top = 352
+    Width = 160
+    TabOrder = 2
+  end
+  object Memo1: TMemo
+    Left = 32
+    Height = 226
+    Top = 22
+    Width = 551
+    TabOrder = 3
+  end
+  object BitBtn1: TBitBtn
+    Left = 488
+    Height = 25
+    Top = 350
+    Width = 95
+    Caption = 'Выход'
+    Kind = bkAbort
+    ModalResult = 3
+    OnClick = BitBtn1Click
+    TabOrder = 4
+  end
+  object BitBtn2: TBitBtn
+    Left = 473
+    Height = 33
+    Top = 272
+    Width = 110
+    Caption = 'Рассчитать'
+    OnClick = BitBtn2Click
+    TabOrder = 5
+  end
+end
